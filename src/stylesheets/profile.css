@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@400;500;600&display=swap");
+
+/* .p_container{
+  margin:5%;
+} */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background: hotpink; */
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 10px;
+}
+
+.info .user {
+  font-size: 1.15em;
+}
+
+.info .user p {
+  padding: 5px;
+}
+
+.info .user p:nth-child(1) {
+  font-weight: 800;
+  font-size: 1.8em;
+}
+
+.info .dp {
+  height: 250px;
+  width: 250px;
+  background: url("https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  margin: 30px;
+  border-radius: 133px;
+  box-shadow: 9px 9px 18px #b5b5b5, -9px -9px 18px #ffffff;
+  transition: 0.5s all;
+}
+
+.p_container .editicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: rgb(35, 174, 255);
+  color: white;
+  margin: 10px 0px;
+  padding: 10px;
+  transition: 0.5s all;
+}
+
+.p_container .editicon a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.p_container .editicon:hover {
+  box-shadow: inset 0px 0px 10px rgb(0, 90, 173);
+}
+
+.follow {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  height: 70px;
+  align-items: center;
+  font-size: 1.3em;
+  box-sizing: border-box;
+  margin: 20px 0px;
+  background: rgb(219, 176, 176);
+  font-family: "Montserrat", sans-serif;
+}
+
+.follow a {
+  text-decoration: none;
+  color: Black;
+  transition: 0.5s all ease-in-out;
+}
+
+.follow a:hover {
+  transform: scale(1);
+  color: rgb(141, 6, 40);
+  font-size: 1.15em;
+}
+
+.posts {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1000px;
+  /* display: flex; */
+}
+
+.posts img {
+  width: 33.3%;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .posts img {
+    width: 50%;
+  }
+  .info .dp {
+    width: 200px;
+    height: 200px;
+  }
+  .info .user {
+    font-size: 1em;
+  }
+  .follow {
+    font-size: 1.2em;
+  }
+  .follow:hover {
+    font-size: 1.08em;
+  }
+}

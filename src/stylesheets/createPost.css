@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.createPost {
+  width: 50%;
+  max-width: 500px;
+  /* border:1px solid black; */
+  margin: 100px auto;
+  -webkit-box-shadow: 12px 7px 53px -24px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: 12px 7px 53px -24px rgba(0, 0, 0, 0.68);
+  box-shadow: 12px 7px 53px -24px rgba(0, 0, 0, 0.68);
+  border: none;
+  /* padding:20px; */
+}
+
+.createPost .content {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.createPost .content .head {
+  text-align: center;
+  /* background: yellow; */
+  font-size: 2.8em;
+  padding: 10px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.createPost .content .icon {
+  font-size: 0.8em;
+}
+
+.createPost .content input[type="text"] {
+  width: 100%;
+}
+
+.createPost .content .file span,
+input[type="file"] {
+  padding: 5px;
+  margin: 5px 0px;
+  /* font-size: 1em; */
+}
+
+.createPost .content input[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0px;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  background: black;
+  transition: 0.5s all ease-in-out;
+  font-size: 0.9em;
+}
+
+.createPost .content input[type="submit"]:hover {
+  transform: scale(1.02);
+  color: black;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 10px 10px 23px #b0b0b0, -10px -10px 23px #ffffff;
+}
+.createPost .content input[type="submit"]:focus {
+  outline: none;
+}
+
+.createPost .content input[type="submit"]:active {
+  box-shadow: inset 0 0 10px black;
+}
+
+@media screen and (max-width: 700px) {
+  .createPost .content .head {
+    font-size: 2.2em;
+  }
+}
